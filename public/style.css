@@ -1,0 +1,108 @@
+/* MoonQuest - Main Styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #050816, #111b3d, #30145b);
+    color: white;
+    min-height: 100vh;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 8%;
+    background: rgba(5, 8, 22, 0.9);
+    border-bottom: 1px solid #453b77;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: #a99aff;
+}
+
+h1, h2, h3 {
+    color: white;
+}
+
+h1 {
+    font-size: 52px;
+    margin: 25px 0;
+}
+
+p {
+    color: #d0d5ed;
+    line-height: 1.8;
+}
+
+a {
+    color: #c4b5fd;
+}
+
+button, .btn {
+    display: inline-block;
+    padding: 13px 25px;
+    margin: 15px 8px 15px 0;
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(90deg, #7658ff, #b05cff);
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover, .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 25px #7658ff66;
+}
+
+section, main {
+    padding: 45px 8%;
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 18px;
+    padding: 28px;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #c4b5fd;
+}
+
+input, select {
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #7663b8;
+    margin: 8px 0;
+    background: #15152e;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+}

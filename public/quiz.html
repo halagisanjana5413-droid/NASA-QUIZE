@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moon Quiz | MoonQuest</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/quiz.js" defer></script>
+</head>
+<body>
+
+<header>
+    <a href="index.html" class="logo">🌙 MoonQuest</a>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="missions.html">Missions</a>
+        <a href="quiz.html">Moon Quiz</a>
+        <a href="leaderboard.html">Leaderboard</a>
+    </nav>
+</header>
+
+<main class="page">
+    <p class="tagline">ASTRONAUT TRAINING</p>
+    <h1>Moon <span>Quiz</span></h1>
+
+    <div class="quiz-box">
+        <div class="quiz-info">
+            <p id="question-count">Question 1</p>
+            <p id="score">Score: 0</p>
+        </div>
+
+        <div class="progress">
+            <div id="progress-bar"></div>
+        </div>
+
+        <h2 id="question">Loading question...</h2>
+
+        <div id="options" class="options"></div>
+
+        <p id="feedback" aria-live="polite"></p>
+
+        <button id="next-btn" class="button" disabled>
+            Next Question →
+        </button>
+    </div>
+</main>
+
+<footer>
+    <p>🌙 MoonQuest — Think like an astronaut!</p>
+</footer>
+
+</body>
+</html>
